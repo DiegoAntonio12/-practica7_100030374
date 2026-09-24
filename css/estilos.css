@@ -1,23 +1,21 @@
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
+html, body {
+    height: 100%;
+    margin: 0;
+    transition: background-color 0.4s ease;
 }
-
-
 .tema-vapor {
-    background-color: #E7A8FF !important; 
-    color: #212529 !important;
+    background-color: #E7A8FF !important;
 }
 
 .tema-lavanda {
-    background-color: #BD99E8 !important; 
-    color: #212529 !important;
+    background-color: #BD99E8 !important;
 }
 
 .tema-cielo {
     background-color: #A8C7FF !important;
-    color: #212529 !important;
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+    border: none;
 }
