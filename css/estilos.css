@@ -2,16 +2,21 @@ html, body {
     height: 100%;
     margin: 0;
     transition: background-color 0.4s ease;
+    background-color: #ffffff;
 }
-.tema-vapor {
+
+body.tema-vapor,
+html.tema-vapor {
     background-color: #E7A8FF !important;
 }
 
-.tema-lavanda {
+body.tema-lavanda,
+html.tema-lavanda {
     background-color: #BD99E8 !important;
 }
 
-.tema-cielo {
+body.tema-cielo,
+html.tema-cielo {
     background-color: #A8C7FF !important;
 }
 

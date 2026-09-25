@@ -28,7 +28,7 @@ btnCalcular.addEventListener("click", function() {
     var promedio = (nota1 + nota2 + nota3) / 3;
     var promedioFinal = promedio.toFixed(2);
 
-    if (promedio >= 70) {
+    if (promedio >= 6) {
         resultado.textContent = "Promedio: " + promedioFinal + " - Aprobado";
         resultado.className = "mt-3 fs-5 text-success fw-bold";
     } else {
@@ -65,18 +65,26 @@ btnLimpiar.addEventListener("click", function() {
 
 
 var cuerpo = document.getElementById("cuerpo");
+var raiz = document.documentElement;
 var btnVapor = document.getElementById("btnVapor");
 var btnLavanda = document.getElementById("btnLavanda");
 var btnCielo = document.getElementById("btnCielo");
 
+function aplicarTema(clase) {
+    cuerpo.classList.remove("tema-vapor", "tema-lavanda", "tema-cielo");
+    raiz.classList.remove("tema-vapor", "tema-lavanda", "tema-cielo");
+    cuerpo.classList.add(clase);
+    raiz.classList.add(clase);
+}
+
 btnVapor.addEventListener("click", function() {
-    cuerpo.className = "tema-vapor py-5";
+    aplicarTema("tema-vapor");
 });
 
 btnLavanda.addEventListener("click", function() {
-    cuerpo.className = "tema-lavanda py-5";
+    aplicarTema("tema-lavanda");
 });
 
 btnCielo.addEventListener("click", function() {
-    cuerpo.className = "tema-cielo py-5";
+    aplicarTema("tema-cielo");
 });
